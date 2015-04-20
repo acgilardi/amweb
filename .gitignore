@@ -1,0 +1,18 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+target-out/
+
+# NPM
+node_modules/
+
+# Bower components
+bower_components/
