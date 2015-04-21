@@ -11,8 +11,5 @@ log/
 target/
 target-out/
 
-# NPM
-node_modules/
-
-# Bower components
-bower_components/
+# client app
+src/main/webapp/app/
