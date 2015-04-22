@@ -11,7 +11,7 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="amweb.mvc"/>
 
-    <mvc:resources mapping="/app/**" location="/app/build" />
+    <mvc:resources mapping="/app/**" location="/app/build/" />
     <mvc:annotation-driven/>
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
