@@ -9,8 +9,19 @@ package amweb.mvc;
 @RequestMapping("/")
 public class MainController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index() {
+    @RequestMapping(value = "/api", method = RequestMethod.GET)
+    public String index2() {
         return "index";
+    }
+
+    @RequestMapping({
+            "/",
+            "/app",
+            "/app/contacts",
+            "/app/contacts",
+            "/app/contacts/{id:\\w+}"
+    })
+    public String index() {
+        return "forward:/app/index.html";
     }
 }
