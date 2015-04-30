@@ -19,7 +19,8 @@ public class MainController {
             "/app",
             "/app/contacts",
             "/app/contacts",
-            "/app/contacts/{id:\\w+}"
+            "/app/contacts/{id:\\w+}",
+            "app/contacts/{id:\\w+}/edit"
     })
     public String index() {
         return "forward:/app/index.html";
